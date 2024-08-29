@@ -5,6 +5,10 @@
   <rule ref="Drupal"/>
   <rule ref="DrupalPractice"/>
 
+    <!-- If no paths are specified check these ones. -->
+  <file>./web/modules/custom</file>
+  <file>./web/themes/custom</file>
+
   <!-- Ignore any files in these paths. -->
   <exclude-pattern>*/.git/*</exclude-pattern>
   <exclude-pattern>*/config/*</exclude-pattern>
