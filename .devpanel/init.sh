@@ -15,6 +15,8 @@
 # For GNU Affero General Public License see <https://www.gnu.org/licenses/>.
 # ----------------------------------------------------------------------
 
+
+
 STATIC_FILES_PATH="$WEB_ROOT/sites/default/files"
 SETTINGS_FILES_PATH="$WEB_ROOT/sites/default/settings.php"
 
@@ -23,6 +25,10 @@ if [[ ! -n "$WEB_ROOT" ]]; then
   export WEB_ROOT=$APP_ROOT
 fi
 
+#== Composer install.
+if [[ -f "$APP_ROOT/composer.json" ]]; then
+  cd $APP_ROOT && composer install;
+fi
 
 # #Securing file permissions and ownership
 # #https://www.drupal.org/docs/security-in-drupal/securing-file-permissions-and-ownership
