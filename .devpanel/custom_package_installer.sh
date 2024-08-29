@@ -12,5 +12,5 @@
 # sudo apt-get update
 # sudo apt-get install -y nano
 
-code-server --install-extension ikappas.phpcs 
-code-server --install-extension andrewdavidblum.drupal-smart-snippets
+code-server --install-extension ikappas.phpcs  --user-data-dir=$APP_ROOT/.vscode
+code-server --install-extension andrewdavidblum.drupal-smart-snippets --user-data-dir=$APP_ROOT/.vscode
