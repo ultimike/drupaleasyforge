@@ -1,0 +1,13 @@
+{
+    /* PHP Linting */
+    "php.validate.executablePath": "/usr/local/bin/php",
+    /* PHP_CodeSniffer */
+    "phpCodeSniffer.autoExecutable": true,
+    "phpCodeSniffer.standardCustom": "/var/www/html/phpcs.xml",
+    /* phpstan */
+    "phpstan.enabled": true,
+    "phpstan.showProgress": true,
+    "phpstan.binPath": "/var/www/html/vendor/bin/phpstan",
+    "phpstan.configFile": "/var/www/html/phpstan.neon",
+  }
+  
