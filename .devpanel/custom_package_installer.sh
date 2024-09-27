@@ -14,3 +14,4 @@
 
 code-server --install-extension ikappas.phpcs  --user-data-dir=$APP_ROOT/.vscode
 code-server --install-extension andrewdavidblum.drupal-smart-snippets --user-data-dir=$APP_ROOT/.vscode
+code-server --install-extension SanderRonde.phpstan-vscode --user-data-dir=$APP_ROOT/.vscode
