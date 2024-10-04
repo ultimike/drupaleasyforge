@@ -12,6 +12,11 @@
 # sudo apt-get update
 # sudo apt-get install -y nano
 
+
+sudo cp $APP_ROOT/php.ini ${PHP_EXT_DIR}/www-xdebug-php.ini
+sudo service apache2 reload
+
+code-server --install-extension xdebug.php-debug --user-data-dir=$APP_ROOT/.vscode
 code-server --install-extension ikappas.phpcs  --user-data-dir=$APP_ROOT/.vscode
 code-server --install-extension andrewdavidblum.drupal-smart-snippets --user-data-dir=$APP_ROOT/.vscode
 code-server --install-extension SanderRonde.phpstan-vscode --user-data-dir=$APP_ROOT/.vscode
