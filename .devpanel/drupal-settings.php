@@ -290,7 +290,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = '89f2086a28e65107f57a9953cee3a16c93c6f40579ae709e11f811622a8b662c';
 
 /**
  * Deployment identifier.
@@ -790,4 +790,8 @@ $databases['default']['default'] = [
 // }
 
 ## Ignore vendor tracker by xdebug
-xdebug_set_filter( XDEBUG_FILTER_TRACING, XDEBUG_PATH_EXCLUDE, [ __DIR__ . "../../../vendor/" ] );
+
+$settings['container_yamls'][] ='/var/www/html/web/sites/development.services.yml';
+$settings['cache']['bins']['render'] = 'cache.backend.null';
+$settings['cache']['bins']['page'] = 'cache.backend.null';
+$settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
