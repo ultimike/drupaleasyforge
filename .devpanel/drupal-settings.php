@@ -788,3 +788,6 @@ $databases['default']['default'] = [
 // if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 //   include $app_root . '/' . $site_path . '/settings.local.php';
 // }
+
+## Ignore vendor tracker by xdebug
+xdebug_set_filter( XDEBUG_FILTER_TRACING, XDEBUG_PATH_EXCLUDE, [ __DIR__ . "../../../vendor/" ] );

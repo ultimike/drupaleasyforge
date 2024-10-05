@@ -59,3 +59,8 @@ sudo chown -R www-data:www-data $STATIC_FILES_PATH
 sudo chown www:www-data $SETTINGS_FILES_PATH
 sudo chmod 664 $SETTINGS_FILES_PATH
 sudo rm -rf lost+found/
+
+
+
+#== Enable test module  for test only
+drush en -y test_module
