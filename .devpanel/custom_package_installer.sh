@@ -22,3 +22,5 @@ code-server --install-extension SanderRonde.phpstan-vscode --user-data-dir=$APP_
 code-server --install-extension recca0120.vscode-phpunit --user-data-dir=$APP_ROOT/.vscode
 code-server --install-extension mblode.twig-language-2 --user-data-dir=$APP_ROOT/.vscode
 code-server --install-extension ikappas.phpcs  --user-data-dir=$APP_ROOT/.vscode
+code-server --install-extension neilbrayfield.php-docblocker --user-data-dir=$APP_ROOT/.vscode
+code-server --install-extension bmewburn.vscode-intelephense-client --user-data-dir=$APP_ROOT/.vscode
