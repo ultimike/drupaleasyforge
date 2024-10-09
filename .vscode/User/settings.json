@@ -2,8 +2,7 @@
     /* PHP Linting */
     "php.validate.executablePath": "/usr/local/bin/php",
     /* PHP_CodeSniffer */
-    "phpCodeSniffer.autoExecutable": true,
-    "phpCodeSniffer.standardCustom": "/var/www/html/phpcs.xml",
+    "phpSniffer.autoDetect": true,
     /* phpstan */
     "phpstan.enabled": true,
     "phpstan.showProgress": true,
